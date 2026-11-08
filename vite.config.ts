@@ -4,6 +4,8 @@ import svgr from "vite-plugin-svgr";
 import path from "path";
 
 export default defineConfig({
+  // GitHub Pages 部署在子路径（/<仓库名>/），通过环境变量注入；本地与 Vercel 默认根路径
+  base: process.env.VITE_BASE_PATH || "/",
   plugins: [
     react(),
     svgr({
@@ -16,7 +18,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
   optimizeDeps: {
