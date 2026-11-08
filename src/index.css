@@ -1,0 +1,113 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 210 100% 97%;
+    --foreground: 214 60% 10%;
+    --card: 210 100% 99%;
+    --card-foreground: 214 60% 10%;
+    --popover: 210 100% 99%;
+    --popover-foreground: 214 60% 10%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 55% 23%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 80% 94%;
+    --muted-foreground: 214 30% 40%;
+    --accent: 186 100% 50%;
+    --accent-foreground: 214 60% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --border: 210 80% 85%;
+    --input: 210 80% 85%;
+    --ring: 210 100% 50%;
+    --chart-1: 210 100% 50%;
+    --chart-2: 186 100% 50%;
+    --chart-3: 210 55% 23%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 0 84.2% 60.2%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    --sidebar-background: 214 60% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 55% 23%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 210 55% 23%;
+    --sidebar-ring: 210 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(186 100% 50%) 100%);
+    --gradient-background: linear-gradient(180deg, hsl(210 100% 97%) 0%, hsl(210 100% 99%) 100%);
+    --shadow-card: 0 1px 3px hsl(210 100% 50% / 0.06);
+    --gradient-card: linear-gradient(135deg, hsl(210 100% 99%) 0%, hsl(210 100% 96%) 100%);
+    --shadow-hover: 0 8px 24px hsl(210 100% 50% / 0.15);
+  }
+
+  .dark {
+    --background: 214 48% 8%;
+    --foreground: 210 40% 98%;
+    --card: 214 48% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 214 48% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 55% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 214 40% 18%;
+    --muted-foreground: 210 30% 70%;
+    --accent: 186 100% 50%;
+    --accent-foreground: 214 60% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --border: 214 40% 22%;
+    --input: 214 40% 22%;
+    --ring: 210 100% 55%;
+    --chart-1: 210 100% 55%;
+    --chart-2: 186 100% 50%;
+    --chart-3: 210 55% 30%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 0 62.8% 30.6%;
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 55%;
+    --info-foreground: 0 0% 100%;
+    --sidebar-background: 214 60% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 100% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 55% 23%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 214 40% 18%;
+    --sidebar-ring: 210 100% 55%;
+    --destructive-foreground: 210 40% 98%;
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 55%) 0%, hsl(186 100% 50%) 100%);
+    --gradient-background: linear-gradient(180deg, hsl(214 48% 8%) 0%, hsl(214 48% 10%) 100%);
+    --shadow-card: 0 1px 3px hsl(0 0% 0% / 0.2);
+    --gradient-card: linear-gradient(135deg, hsl(214 48% 12%) 0%, hsl(214 48% 9%) 100%);
+    --shadow-hover: 0 8px 24px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

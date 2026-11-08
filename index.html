@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>无限大攻略站</title>
+    <meta
+      name="description"
+      content="为《无限大》游戏玩家提供全面攻略信息的Web站点，涵盖剧情通关、彩蛋收集、资料查询、改装搭配等核心内容，帮助玩家快速获取游戏攻略与数据信息。"
+    />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // 防止暗色模式闪烁：渲染前应用用户主题偏好
+      (function () {
+        try {
+          if (localStorage.getItem("wiki-theme-preference") === "dark") {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

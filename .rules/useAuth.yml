@@ -1,0 +1,10 @@
+id: useAuth
+language: Tsx
+files:
+  - src/**/*.tsx
+rule:
+  kind: call_expression
+  has:
+    kind: identifier
+    regex: '^useAuth$'
+severity: info

@@ -1,0 +1,10 @@
+id: authProvider
+language: Tsx
+files:
+  - src/**/*.tsx
+rule:
+  kind: jsx_self_closing_element
+  has:
+    kind: identifier
+    regex: '^AuthProvider$'
+severity: info
