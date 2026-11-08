@@ -37,6 +37,23 @@
 
 Vite、TypeScript、React、Supabase
 
+## 部署说明（GitHub / Vercel / Cloudflare Pages）
+
+本项目为纯静态站点，构建产物在 `dist/`，**无需服务端、无需环境变量**即可运行（登录模块未启用，Supabase 相关代码不会被打包进产物）。
+
+```bash
+npm install
+npm run dev      # 本地开发，默认 http://localhost:5173
+npm run build    # 构建，产物输出到 dist/
+npm run preview  # 本地预览构建产物
+```
+
+- **Vercel / Netlify**：导入 Git 仓库，构建命令 `npm run build`，输出目录 `dist`，框架预设选 Vite。
+- **Cloudflare Pages**：构建命令 `npm run build`，输出目录 `dist`。
+- **GitHub Pages**：需在 `vite.config.ts` 中设置 `base: '/<仓库名>/'`，否则静态资源路径会 404。
+- **路由说明**：项目使用 `BrowserRouter`，部署到静态托管时需配置 SPA fallback（所有路径回退到 `index.html`）。Vercel 可用 `vercel.json` 的 rewrites，Netlify 可用 `_redirects` 文件，Cloudflare Pages 默认支持。
+- **环境变量**：仅在启用登录功能时才需要 `VITE_SUPABASE_URL` 与 `VITE_SUPABASE_ANON_KEY`，参见 `.env.example`。
+
 ## 本地开发
 
 ### 如何在本地编辑代码？
