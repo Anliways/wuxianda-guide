@@ -101,12 +101,12 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   const brand = (
     <Link to="/" className="flex items-center gap-2 shrink-0">
       <img
-        src="https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/10027.png"
+        src="/images/logo-light.png"
         alt="无限大攻略站"
         className="h-8 w-auto object-contain block dark:hidden"
       />
       <img
-        src="https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/10026.png"
+        src="/images/logo-dark.png"
         alt="无限大攻略站"
         className="h-8 w-auto object-contain hidden dark:block"
       />
@@ -133,12 +133,12 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 <div className="p-4 border-b border-sidebar-border">
                   <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2">
                     <img
-                      src="https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/10027.png"
+                      src="/images/logo-light.png"
                       alt="无限大攻略站"
                       className="h-8 w-auto object-contain block dark:hidden"
                     />
                     <img
-                      src="https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/10026.png"
+                      src="/images/logo-dark.png"
                       alt="无限大攻略站"
                       className="h-8 w-auto object-contain hidden dark:block"
                     />

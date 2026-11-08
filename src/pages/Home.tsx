@@ -48,7 +48,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/10001.jpg)`,
+            backgroundImage: `url(/images/hero-bg.jpg)`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />

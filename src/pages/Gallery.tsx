@@ -3,9 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import PageMeta from "@/components/common/PageMeta";
 
 const galleryImages = [
-  { src: "https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/screenshot-1787991309568.png", alt: "都市黎明剧情攻略" },
-  { src: "https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/screenshot-1787991358542.png", alt: "角色黎星资料" },
-  { src: "https://miaoda-conversation-file.cdn.bcebos.com/user-bxvsopsf0g00/app-e1nndy02f37l/20260829/screenshot-1787991377458.png", alt: "苍穹暴击流改装方案" },
+  { src: "/images/gallery-1.png", alt: "都市黎明剧情攻略" },
+  { src: "/images/gallery-2.png", alt: "角色黎星资料" },
+  { src: "/images/gallery-3.png", alt: "苍穹暴击流改装方案" },
 ];
 
 /** 图片中心：集中展示游戏攻略、角色与方案相关的图片素材 */
